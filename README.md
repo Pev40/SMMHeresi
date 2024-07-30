@@ -59,6 +59,7 @@ El proyecto está organizado en varias carpetas y archivos clave para facilitar 
 
 #### Estructura de Carpetas y Archivos
 
+```
 ClinicManagement/
 ├── src/
 │   ├── main/
@@ -83,6 +84,8 @@ ClinicManagement/
 ├── .gitignore
 ├── README.md
 └── pom.xml
+```
+
 
 #### Descripción de Carpetas y Archivos
 
@@ -148,10 +151,11 @@ Esta sección describe los servicios de soporte a tareas automáticas en proceso
 **Casos de Prueba y Resultados:**
 
 Reporte Inicial:
-![Reporte Inicial](https://github.com/user-attachments/assets/e6832625-a7ca-4c8a-ae0f-090c20e52a6f/b3f48072-9ab3-463d-a3b5-301097f194ef)
+![b3f48072-9ab3-463d-a3b5-301097f194ef](https://github.com/user-attachments/assets/e6832625-a7ca-4c8a-ae0f-090c20e52a6f)
+Reporte Post Fix
+![7a630c38-ef93-46f6-9051-ac557362c2a3](https://github.com/user-attachments/assets/b144f655-32d3-477e-afa6-a99d47a03d3e)
 
-Reporte Post Fix:
-![Reporte Post Fix](https://github.com/user-attachments/assets/b144f655-32d3-477e-afa6-a99d47a03d3e/7a630c38-ef93-46f6-9051-ac557362c2a3)
+
 
 ### Pruebas de Performance
 
