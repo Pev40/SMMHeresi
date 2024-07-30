@@ -55,7 +55,146 @@ Desarrollar una plataforma de telepsiquiatría con un sistema de agendado de cit
 
 ### Estructura del Proyecto
 
-El proyecto está organizado en varias carpetas y archivos clave para facilitar el desarrollo, la implementación y el mantenimiento. A continuación se describe la estructura del proyecto contenida:
+La arquitectura de la plataforma de telepsiquiatría sigue el patrón de diseño Domain-Driven Design (DDD) y se organiza en varias capas. A continuación, se describen las principales capas y sus componentes:
+
+![ddd](https://github.com/user-attachments/assets/bc1a4af7-23d6-41f9-930c-d111a3bacf71) 
+### Servicios de Dominio
+
+Esta capa encapsula la lógica de negocio y contiene los siguientes servicios:
+
+- **AuthService**
+  - Métodos:
+    - `login(String username, String password): boolean`
+    - `logout(): void`
+- **PatientService**
+  - Métodos:
+    - `registerPatient(Patient patient): void`
+    - `getPatientById(int id): Patient`
+    - `updatePatient(int id, Patient patient): void`
+    - `deletePatient(int id): void`
+- **DoctorService**
+  - Métodos:
+    - `registerDoctor(Doctor doctor): void`
+    - `getDoctorById(int id): Doctor`
+    - `updateDoctor(int id, Doctor doctor): void`
+    - `deleteDoctor(int id): void`
+- **AppointmentService**
+  - Métodos:
+    - `scheduleAppointment(Appointment appointment): void`
+    - `getAppointmentsByDoctor(int doctorId): List<Appointment>`
+    - `getAppointmentsByPatient(int patientId): List<Appointment>`
+    - `cancelAppointment(int id): void`
+
+### Aplicación
+
+Esta capa contiene los controladores que manejan las solicitudes HTTP y delegan las operaciones a los servicios de dominio:
+
+- **AccountController**
+  - Métodos:
+    - `login()`
+    - `logout()`
+    - `register()`
+- **PatientsController**
+  - Métodos:
+    - `listAllPatients()`
+    - `getPatientDetails(int id)`
+    - `addPatient(Patient patient)`
+    - `updatePatient(int id, Patient patient)`
+- **DoctorsController**
+  - Métodos:
+    - `listAllDoctors()`
+    - `getDoctorDetails(int id)`
+    - `addDoctor(Doctor doctor)`
+    - `updateDoctor(int id, Doctor doctor)`
+- **AppointmentsController**
+  - Métodos:
+    - `listAllAppointments()`
+    - `getAppointmentDetails(int id)`
+    - `scheduleAppointment(Appointment appointment)`
+    - `cancelAppointment(int id)`
+
+### Repositorios
+
+Esta capa se encarga de la persistencia y recuperación de datos:
+
+- **IPatientRepository**
+  - Métodos:
+    - `findById(int id): Patient`
+    - `save(Patient patient): void`
+    - `update(Patient patient): void`
+    - `delete(int id): void`
+- **IDoctorRepository**
+  - Métodos:
+    - `findById(int id): Doctor`
+    - `save(Doctor doctor): void`
+    - `update(Doctor doctor): void`
+    - `delete(int id): void`
+- **IAppointmentRepository**
+  - Métodos:
+    - `findById(int id): Appointment`
+    - `save(Appointment appointment): void`
+    - `update(Appointment appointment): void`
+    - `delete(int id): void`
+- **Implementaciones Concretas**
+  - `PatientRepository`, `DoctorRepository`, `AppointmentRepository`
+
+### Dominio
+
+Esta capa contiene las clases principales del modelo de dominio, representando entidades y objetos de valor:
+
+- **Agregados**
+  - **Patient**
+    - Atributos:
+      - `int id`
+      - `String firstName`
+      - `String lastName`
+      - `DateTime birthDate`
+      - `String gender`
+      - `String address`
+      - `String phone`
+    - Métodos:
+      - `getFullName(): String`
+  - **Doctor**
+    - Atributos:
+      - `int id`
+      - `String firstName`
+      - `String lastName`
+      - `String specialty`
+      - `String office`
+      - `String phone`
+    - Métodos:
+      - `getSpecialty(): String`
+  - **Appointment**
+    - Atributos:
+      - `int id`
+      - `DateTime appointmentDate`
+      - `Patient patient`
+      - `Doctor doctor`
+    - Métodos:
+      - `reschedule(DateTime newDate)`
+- **Entidades**
+  - **User**
+    - Atributos:
+      - `int id`
+      - `String username`
+      - `String password`
+      - `String role`
+- **Valores**
+  - **Address**
+    - Atributos:
+      - `String street`
+      - `String city`
+      - `String state`
+      - `String zipCode`
+  - **ContactInfo**
+    - Atributos:
+      - `String email`
+      - `String phone`
+
+### Relaciones
+
+Las relaciones entre las capas están claramente delineadas. Los controladores dependen de los servicios de dominio, y estos, a su vez, dependen de los repositorios para interactuar con la base de datos. Esta organización facilita la comprensión, el mantenimiento y la expansión del sistema.
+
 
 #### Estructura de Carpetas y Archivos
 
