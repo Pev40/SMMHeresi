@@ -58,33 +58,32 @@ Desarrollar una plataforma de telepsiquiatría con un sistema de agendado de cit
 La arquitectura de la plataforma de telepsiquiatría sigue el patrón de diseño Domain-Driven Design (DDD) y se organiza en varias capas. A continuación, se describen las principales capas y sus componentes:
 
 ![ddd](https://github.com/user-attachments/assets/bc1a4af7-23d6-41f9-930c-d111a3bacf71) 
-# Plataforma de Telepsiquiatría
 
 La plataforma de telepsiquiatría está organizada en varias capas siguiendo el patrón de diseño Domain-Driven Design (DDD). 
 
-## Servicios de Dominio
+#### Servicios de Dominio
 
 Esta capa encapsula la lógica de negocio y contiene servicios como `AuthService`, `PatientService`, `DoctorService` y `AppointmentService`, que manejan operaciones esenciales como la autenticación, la gestión de pacientes y doctores, y la programación de citas.
 
-## Aplicación
+#### Aplicación
 
 La capa de Aplicación incluye controladores como `AccountController`, `PatientsController`, `DoctorsController` y `AppointmentsController`, que manejan las solicitudes HTTP y delegan las operaciones a los servicios de dominio.
 
-## Repositorios
+#### Repositorios
 
 Esta capa se encarga de la persistencia y recuperación de datos, definiendo métodos para buscar, guardar, actualizar y eliminar entidades. Los repositorios incluyen `PatientRepository`, `DoctorRepository` y `AppointmentRepository`.
 
-## Dominio
+#### Dominio
 
 La capa de Dominio contiene las clases principales del modelo, incluyendo agregados como `Patient`, `Doctor` y `Appointment`, y entidades como `User`, que representan los conceptos clave del negocio.
 
-## Relaciones
+#### Relaciones
 
 Las relaciones entre las capas están claramente delineadas, facilitando la comprensión, el mantenimiento y la expansión del sistema. Los controladores dependen de los servicios de dominio, y estos, a su vez, dependen de los repositorios para interactuar con la base de datos.
 
 
 
-#### Estructura de Carpetas y Archivos
+### Estructura de Carpetas y Archivos
 
 ```
 ├───.sonarqube
