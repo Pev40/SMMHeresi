@@ -36,7 +36,11 @@
 
 ## Cliente
 
-**Cliente:** Organización Ficticia
+- **Nombre:** Centro de Salud Mental Moisés Heresi Farwagi
+- **Ubicación:** Av. Pumacahua s/n, Cerro Colorado
+- **Organización:** Sociedad de Beneficencia Pública de Arequipa
+- **RUC:** 20120958136
+- **Web:** [sbarequipa.org.pe](https://sbarequipa.org.pe/)
 
 ## Propósito del Proyecto
 
