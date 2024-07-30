@@ -143,19 +143,6 @@ Las relaciones entre las capas están claramente delineadas, facilitando la comp
 └───packages
 ```
 
-
-#### Descripción de Carpetas y Archivos
-
-- **src/main/java/com/clinicmanagement/controller/AppointmentController.java**: Contiene las clases controladoras que manejan las solicitudes HTTP relacionadas con las citas.
-- **src/main/java/com/clinicmanagement/model/Appointment.java**: Define las entidades y modelos de datos utilizados en el sistema, en este caso, las citas.
-- **src/main/java/com/clinicmanagement/repository/AppointmentRepository.java**: Interfaces que extienden los repositorios de Spring Data JPA para interactuar con la base de datos.
-- **src/main/java/com/clinicmanagement/service/AppointmentService.java**: Implementa la lógica de negocio y las operaciones de servicio para las citas.
-- **src/main/resources/application.properties**: Archivo de configuración de la aplicación.
-- **src/test/java/com/clinicmanagement/AppointmentControllerTest.java**: Contiene las pruebas unitarias para las clases controladoras.
-- **.gitignore**: Lista de archivos y directorios que Git debe ignorar.
-- **README.md**: Archivo de documentación del proyecto.
-- **pom.xml**: Archivo de configuración del proyecto Maven, incluyendo dependencias y plugins necesarios para la compilación y ejecución del proyecto.
-
 ## Servicios de Soporte a Tareas Automáticas en Procesos de Negocio
 
 Esta sección describe los servicios de soporte a tareas automáticas en procesos de negocio utilizando **OpenAPI** y la herramienta **Swagger**.
