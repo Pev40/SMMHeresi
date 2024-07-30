@@ -20,12 +20,18 @@
 ## Propósito del Proyecto
 
 Desarrollar una plataforma de telepsiquiatría con un sistema de agendado de citas accesible, que permita a los pacientes recibir atención psiquiátrica de manera remota y cómoda, mejorando así el acceso a la atención médica y optimizando la gestión de citas para el hospital psiquiátrico.
+### Objetivos
+
+1. **Mejorar la precisión de diagnósticos y la efectividad de tratamientos:** Implementar herramientas en la plataforma que faciliten la evaluación remota de pacientes, permitiendo una mejor comprensión de sus necesidades y una planificación de tratamientos más precisa.
+2. **Facilitar seguimientos efectivos y personalizados:** Desarrollar funcionalidades que posibiliten el seguimiento continuo de pacientes a distancia, asegurando un monitoreo efectivo de su progreso y ajustando los tratamientos según sea necesario para mejorar los resultados clínicos.
+3. **Promover la empatía y la humanización en la atención remota:** Integrar elementos en la plataforma que fomenten la conexión emocional entre pacientes y profesionales de la salud mental durante las consultas virtuales, asegurando un trato respetuoso, cálido y empático, a pesar de la distancia física.
+4. **Combatir el estigma y la discriminación:** Incorporar recursos educativos y de sensibilización en la plataforma para promover la comprensión y aceptación de los trastornos mentales, fomentando un ambiente inclusivo y libre de prejuicios tanto para pacientes como para profesionales de la salud.
 
 ## Visión General de Arquitectura
 
 ### Estructura del Proyecto
 
-El proyecto está organizado en varias carpetas y archivos clave para facilitar el desarrollo, la implementación y el mantenimiento. A continuación se describe la estructura del proyecto contenida en el archivo `ClinicManagement.7z`:
+El proyecto está organizado en varias carpetas y archivos clave para facilitar el desarrollo, la implementación y el mantenimiento. A continuación se describe la estructura del proyecto contenida:
 
 #### Estructura de Carpetas y Archivos
 
