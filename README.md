@@ -22,8 +22,6 @@
   - [Pruebas de Seguridad](#pruebas-de-seguridad)
   - [Pruebas de Performance](#pruebas-de-performance)
 - [Gestión de Cambios](#gestión-de-cambios)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## Nombre del Equipo de Trabajo
 
