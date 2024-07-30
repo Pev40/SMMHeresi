@@ -27,30 +27,11 @@ Desarrollar una plataforma de telepsiquiatría con un sistema de agendado de cit
 
 ## Servicios de Soporte a Tareas Automáticas en Procesos de Negocio
 
-**Formato Estándar:** OpenAPI y Herramienta Swagger
-
-### Módulos
-
-#### Nombre + Propósito
-
-- **Programación de Citas:**
-  - **Operaciones Disponibles:**
-    - **Método:** POST
-    - **URL:** `/api/citas`
-    - **Parámetros:** `{ "pacienteId": "123", "fecha": "2024-08-01", "hora": "10:00" }`
-  - **Modelos:**
-    - **Entidades:** Cita, Paciente
-    - **Agregados o Módulos Clave:** Gestión de Citas
-
-#### Consulta Virtual
-
-- **Operaciones Disponibles:**
-  - **Método:** POST
-  - **URL:** `/api/consultas`
-  - **Parámetros:** `{ "pacienteId": "123", "profesionalId": "456", "fecha": "2024-08-01", "hora": "10:00", "tipo": "virtual" }`
-- **Modelos:**
-  - **Entidades:** Consulta, Paciente, Profesional
-  - **Agregados o Módulos Clave:** Gestión de Consultas Virtuales
-
 ### Pruebas de Software
+**Pruebas de Seguridad**
+Reporte Inicial:
+![b3f48072-9ab3-463d-a3b5-301097f194ef](https://github.com/user-attachments/assets/e6832625-a7ca-4c8a-ae0f-090c20e52a6f)
+Reporte Post Fix
+![7a630c38-ef93-46f6-9051-ac557362c2a3](https://github.com/user-attachments/assets/b144f655-32d3-477e-afa6-a99d47a03d3e)
+
 
