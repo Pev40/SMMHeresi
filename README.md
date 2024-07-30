@@ -1,7 +1,4 @@
-# HERESI SISTEMA IS3# SMMHeresi
-Para estructurar el README del repositorio de GitHub del proyecto de manera adecuada, siguiendo las indicaciones proporcionadas en la imagen y la información general del proyecto, puedes organizar el contenido de la siguiente manera:
-
----
+# HERESI SISTEMA IS3
 
 # Plataforma de Telepsiquiatría
 
