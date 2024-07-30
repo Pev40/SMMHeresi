@@ -60,30 +60,61 @@ El proyecto está organizado en varias carpetas y archivos clave para facilitar 
 #### Estructura de Carpetas y Archivos
 
 ```
-ClinicManagement/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── clinicmanagement/
-│   │   │           ├── controller/
-│   │   │           │   └── AppointmentController.java
-│   │   │           ├── model/
-│   │   │           │   └── Appointment.java
-│   │   │           ├── repository/
-│   │   │           │   └── AppointmentRepository.java
-│   │   │           └── service/
-│   │   │               └── AppointmentService.java
-│   │   └── resources/
-│   │       └── application.properties
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── clinicmanagement/
-│                   └── AppointmentControllerTest.java
-├── .gitignore
-├── README.md
-└── pom.xml
+├───.sonarqube
+│   ├───bin
+│   │   └───targets
+│   ├───conf
+├───ClinicManagement
+│   ├───.config
+│   ├───App_Start
+│   ├───bin
+│   ├───Content
+│   │   ├───bootstrap
+│   │   │   └───mixins
+│   │   ├───css
+│   │   │   └───iCheck
+│   │   ├───DataTables
+│   │   │   ├───css
+│   │   │   ├───images
+│   │   │   └───swf
+│   │   ├───fonts
+│   │   ├───iCheck
+│   │   ├───images
+│   │   └───themes
+│   │       └───base
+│   │           └───images
+│   ├───Controllers
+│   │   └───Api
+│   ├───Core
+│   │   ├───Dto
+│   │   ├───Helpers
+│   │   ├───Models
+│   │   ├───Repositories
+│   │   └───ViewModel
+│   ├───Migrations
+│   ├───obj
+│   │   └───Debug
+│   │       └───TempPE
+│   ├───Persistence
+│   │   ├───EntityConfigurations
+│   │   └───Repositories
+│   ├───Properties
+│   ├───Scripts
+│   │   ├───DataTables
+│   │   ├───flot
+│   │   ├───locales
+│   │   └───vendors
+│   └───Views
+│       ├───Account
+│       ├───Appointments
+│       ├───Attendances
+│       ├───Doctors
+│       ├───Home
+│       ├───Manage
+│       ├───Patients
+│       ├───Reports
+│       └───Shared
+└───packages
 ```
 
 
