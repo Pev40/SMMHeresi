@@ -53,7 +53,7 @@ Desarrollar una plataforma de telepsiquiatría con un sistema de agendado de cit
 3. **Promover la empatía y la humanización en la atención remota:** Integrar elementos en la plataforma que fomenten la conexión emocional entre pacientes y profesionales de la salud mental durante las consultas virtuales, asegurando un trato respetuoso, cálido y empático, a pesar de la distancia física.
 4. **Combatir el estigma y la discriminación:** Incorporar recursos educativos y de sensibilización en la plataforma para promover la comprensión y aceptación de los trastornos mentales, fomentando un ambiente inclusivo y libre de prejuicios tanto para pacientes como para profesionales de la salud.
 
-## Visión General de Arquitectura
+## Visión General
 ### Arquitectura a del Proyecto
 ![image](https://github.com/user-attachments/assets/18d12313-0ce4-4f66-b6f6-50eccd3d6127)
 ### Infraestructua del Proyecto
@@ -206,6 +206,8 @@ Reporte Post Fix
 
 
 ### Pruebas de Performance
+![image](https://github.com/user-attachments/assets/370e50f4-80d6-4869-8dc0-a7dd4b2fc35b)
+El analisis de SonarQube nos muestra la deudad tecnica es de 2k H, dando un resultado de mantemibilidad de A. La duplicidad es de 14.7%, principalmente dado por archivos css. El rendimiento si tiene varios problemas dando 243 issues posibles. En cuento a seguridad del codigo nos da un grado A, teniendo 0 issues, dando un nota general de Aceptable
 
 **Casos de Prueba y Resultados:**
 
