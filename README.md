@@ -282,18 +282,11 @@ Reporte Inicial:
 Reporte Post Fix
 ![7a630c38-ef93-46f6-9051-ac557362c2a3](https://github.com/user-attachments/assets/b144f655-32d3-477e-afa6-a99d47a03d3e)
 
-
-
 ### Pruebas de Performance
 ![image](https://github.com/user-attachments/assets/370e50f4-80d6-4869-8dc0-a7dd4b2fc35b)
 El analisis de SonarQube nos muestra la deudad tecnica es de 2k H, dando un resultado de mantemibilidad de A. La duplicidad es de 14.7%, principalmente dado por archivos css. El rendimiento si tiene varios problemas dando 243 issues posibles. En cuento a seguridad del codigo nos da un grado A, teniendo 0 issues, dando un nota general de Aceptable
 
-**Casos de Prueba y Resultados:**
-
-- Medir el tiempo de respuesta de las operaciones bajo carga normal y máxima.
-- Simular el uso del sistema por múltiples usuarios simultáneos para asegurar que soporta el número esperado de usuarios.
-
 ## Gestión de Cambios
 
-**Registro y Seguimiento:** Registro de defectos y mejoras, seguimiento de cambios realizados en el sistema.
+![image](https://github.com/user-attachments/assets/4e6928ef-e9ce-4159-b924-521412e46a95)
 
