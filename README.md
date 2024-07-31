@@ -194,6 +194,84 @@ Esta sección describe los servicios de soporte a tareas automáticas en proceso
   ![image](https://github.com/user-attachments/assets/67c125b5-7554-40a8-ae66-bd88fbd2031f)
 - Dcumentación en Postman : 
 ![image](https://github.com/user-attachments/assets/7132c2f5-7c47-4a2e-b9e4-f430604a31f7)
+Test de Api:
+```
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+
+pm.test("Response time is less than 200ms", function () {
+  pm.expect(pm.response.responseTime).to.be.below(200);
+});
+
+
+pm.test("Response time is less than 200ms", function () {
+  pm.expect(pm.response.responseTime).to.be.below(200);
+});
+
+pm.test("Validate the response schema for the presence of required fields", function () {
+  const responseData = pm.response.json();
+
+  pm.expect(responseData).to.be.an('array').that.is.not.empty;
+
+  responseData.forEach(function (patient) {
+    pm.expect(patient).to.have.property('id');
+    pm.expect(patient).to.have.property('token');
+    pm.expect(patient).to.have.property('name');
+    pm.expect(patient).to.have.property('birthDate');
+    pm.expect(patient).to.have.property('phone');
+    pm.expect(patient).to.have.property('address');
+    pm.expect(patient).to.have.property('cityId');
+    pm.expect(patient).to.have.property('cities');
+    pm.expect(patient).to.have.property('doctorId');
+    pm.expect(patient).to.have.property('doctor');
+    pm.expect(patient).to.have.property('dateTime');
+    pm.expect(patient).to.have.property('height');
+    pm.expect(patient).to.have.property('weight');
+  });
+});
+
+
+pm.test("Presence of Content-Type header in the response", function () {
+    pm.expect(pm.response.headers.get("Content-Type")).to.exist;
+});
+
+
+pm.test("Response status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+
+pm.test("Response schema includes required fields", function () {
+  const responseData = pm.response.json();
+  
+  pm.expect(responseData).to.be.an('array');
+  responseData.forEach(function(patient){
+    pm.expect(patient).to.have.property('id');
+    pm.expect(patient).to.have.property('name');
+    pm.expect(patient).to.have.property('birthDate');
+    pm.expect(patient).to.have.property('phone');
+    pm.expect(patient).to.have.property('address');
+    pm.expect(patient).to.have.property('cityId');
+    pm.expect(patient).to.have.property('cities');
+    pm.expect(patient).to.have.property('doctorId');
+    pm.expect(patient).to.have.property('dateTime');
+    pm.expect(patient).to.have.property('height');
+    pm.expect(patient).to.have.property('weight');
+  });
+});
+
+
+pm.test("Response time is less than 200ms", function () {
+  pm.expect(pm.response.responseTime).to.be.below(200);
+});
+```
+![image](https://github.com/user-attachments/assets/02405fd3-1327-423b-8585-66e7d7f5d977)
 
 ### Pruebas de Seguridad
 
