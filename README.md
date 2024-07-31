@@ -54,10 +54,12 @@ Desarrollar una plataforma de telepsiquiatría con un sistema de agendado de cit
 4. **Combatir el estigma y la discriminación:** Incorporar recursos educativos y de sensibilización en la plataforma para promover la comprensión y aceptación de los trastornos mentales, fomentando un ambiente inclusivo y libre de prejuicios tanto para pacientes como para profesionales de la salud.
 
 ## Visión General de Arquitectura
+### Arquitectura a del Proyecto
+![image](https://github.com/user-attachments/assets/18d12313-0ce4-4f66-b6f6-50eccd3d6127)
+### Infraestructua del Proyecto
+![image](https://github.com/user-attachments/assets/7f94ec32-b3e8-48e3-827b-c7afdf7ecfd8)
 
-### Estructura del Proyecto
-
-La arquitectura de la plataforma de telepsiquiatría sigue el patrón de diseño Domain-Driven Design (DDD) y se organiza en varias capas. A continuación, se describen las principales capas y sus componentes:
+### DDD
 
 ![ddd](https://github.com/user-attachments/assets/bc1a4af7-23d6-41f9-930c-d111a3bacf71) 
 
