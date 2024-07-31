@@ -194,6 +194,8 @@ Esta sección describe los servicios de soporte a tareas automáticas en proceso
   ![image](https://github.com/user-attachments/assets/67c125b5-7554-40a8-ae66-bd88fbd2031f)
 - Dcumentación en Postman : 
 ![image](https://github.com/user-attachments/assets/7132c2f5-7c47-4a2e-b9e4-f430604a31f7)
+https://documenter.getpostman.com/view/16226524/2sA3kd9H84#fb41158a-2f37-4130-b2f0-e06bf999d757
+
 Test de Api:
 ```
 pm.test("Status code is 200", function () {
@@ -284,7 +286,8 @@ Reporte Post Fix
 
 ### Pruebas de Performance
 ![image](https://github.com/user-attachments/assets/370e50f4-80d6-4869-8dc0-a7dd4b2fc35b)
-El analisis de SonarQube nos muestra la deudad tecnica es de 2k H, dando un resultado de mantemibilidad de A. La duplicidad es de 14.7%, principalmente dado por archivos css. El rendimiento si tiene varios problemas dando 243 issues posibles. En cuento a seguridad del codigo nos da un grado A, teniendo 0 issues, dando un nota general de Aceptable
+El analisis de SonarQube nos muestra la deudad tecnica es de 2k H, dando un resultado de mantemibilidad de A. La duplicidad es de 14.7%, principalmente dado por archivos css. El rendimiento si tiene varios problemas dando 243 issues posibles. En cuento a seguridad del codigo nos da un grado A, teniendo 0 issues, dando un nota general de Aceptable.
+
 
 ## Gestión de Cambios
 
