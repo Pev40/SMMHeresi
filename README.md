@@ -28,10 +28,10 @@
 **Equipo:** Poisson
 
 **Integrantes:**
+- **Vizcarra Vargas Piero Emiliano:** Scrum Master/DevOps - CEO
 - **Lopez Condori Andrea del Rosario:** Desarrollador Front-End/Analista de Calidad
 - **Mayorga Villena Jharold Alonso:** Desarrollador Back-End
 - **Quispe Rojas Javier:** Desarrollador Front-End/Desarrollador Back-End
-- **Vizcarra Vargas Piero Emiliano:** Scrum Master/DevOps
 - **Zamalloa Molina Sebastian Agenor:** Desarrollador Back-End
 
 ## Cliente
