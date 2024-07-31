@@ -287,8 +287,8 @@ Reporte Post Fix
 ### Pruebas de Performance
 ![image](https://github.com/user-attachments/assets/370e50f4-80d6-4869-8dc0-a7dd4b2fc35b)
 El analisis de SonarQube nos muestra la deudad tecnica es de 2k H, dando un resultado de mantemibilidad de A. La duplicidad es de 14.7%, principalmente dado por archivos css. El rendimiento si tiene varios problemas dando 243 issues posibles. En cuento a seguridad del codigo nos da un grado A, teniendo 0 issues, dando un nota general de Aceptable.
-
-
+Informe ZAP:
+https://github.com/Pev40/SMMHeresi/blob/main/2024-07-31-ZAP-Report-localhost.html
 ## Gestión de Cambios
 
 ![image](https://github.com/user-attachments/assets/4e6928ef-e9ce-4159-b924-521412e46a95)
