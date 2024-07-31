@@ -190,9 +190,10 @@ Esta sección describe los servicios de soporte a tareas automáticas en proceso
 
 **Casos de Prueba y Resultados:**
 
-- Verificar que las operaciones CRUD (crear, leer, actualizar, eliminar) funcionan correctamente para usuarios, citas y registros clínicos.
-- Verificar la interacción entre módulos, como agendado de citas e historial clínico.
-- Evaluar la facilidad de uso de la interfaz de usuario y asegurar que es accesible para diferentes perfiles de usuarios.
+- Documentación de  Swagger:
+  ![image](https://github.com/user-attachments/assets/67c125b5-7554-40a8-ae66-bd88fbd2031f)
+- Dcumentación en Postman : 
+![image](https://github.com/user-attachments/assets/7132c2f5-7c47-4a2e-b9e4-f430604a31f7)
 
 ### Pruebas de Seguridad
 
