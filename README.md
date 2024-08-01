@@ -293,3 +293,74 @@ https://github.com/Pev40/SMMHeresi/blob/main/2024-07-31-ZAP-Report-localhost.htm
 
 ![image](https://github.com/user-attachments/assets/4e6928ef-e9ce-4159-b924-521412e46a95)
 
+
+### Principios SOLID
+
+
+#### Single Responsibility Principle (SRP)
+El principio de responsabilidad única establece que cada clase debe tener una única responsabilidad o motivo para cambiar. En nuestro proyecto, esto se ve reflejado en el controlador `PatientsController`, que maneja exclusivamente las operaciones relacionadas con los pacientes.
+
+```csharp
+public class PatientsController : Controller
+{
+    private readonly IUnitOfWork _unitOfWork;
+
+    public PatientsController(IUnitOfWork unitOfWork)
+    {
+        _unitOfWork = unitOfWork;
+    }
+
+    public ActionResult Index()
+    {
+        return View();
+    }
+
+    // Otros métodos relacionados con pacientes...
+}
+```
+
+#### Open/Closed Principle (OCP)
+El principio de abierto/cerrado sugiere que las entidades de software deben estar abiertas para la extensión pero cerradas para la modificación. Esto se puede observar en la interfaz `IAppointmentRepository`, que permite agregar nuevas funcionalidades sin modificar las existentes.
+
+```csharp
+public interface IAppointmentRepository
+{
+    IEnumerable<Appointment> GetAppointments();
+    IEnumerable<Appointment> GetAppointmentWithPatient(int id);
+    // Otros métodos relacionados con citas...
+}
+```
+
+#### Liskov Substitution Principle (LSP)
+El principio de sustitución de Liskov establece que los objetos de una clase derivada deben poder reemplazar a los objetos de la clase base sin alterar el funcionamiento del programa. En nuestro proyecto, `PatientsController` depende de la abstracción `IUnitOfWork`, lo que permite reemplazar la implementación concreta sin cambiar el comportamiento del controlador.
+
+```csharp
+public PatientsController(IUnitOfWork unitOfWork)
+{
+    _unitOfWork = unitOfWork;
+}
+```
+
+#### Interface Segregation Principle (ISP)
+El principio de segregación de interfaces sugiere que los clientes no deben estar forzados a depender de interfaces que no usan. Esto se ve reflejado en nuestro proyecto a través de interfaces bien definidas para cada repositorio, como `IPatientRepository`, `ICityRepository`, etc.
+
+```csharp
+public interface IUnitOfWork
+{
+    IPatientRepository Patients { get; }
+    IAppointmentRepository Appointments { get; }
+    // Otros repositorios...
+}
+```
+
+#### Dependency Inversion Principle (DIP)
+El principio de inversión de dependencias establece que los módulos de alto nivel no deben depender de módulos de bajo nivel, sino que ambos deben depender de abstracciones. En nuestro proyecto, `PatientsController` depende de la abstracción `IUnitOfWork` en lugar de una implementación concreta, facilitando la inyección de dependencias.
+
+```csharp
+private readonly IUnitOfWork _unitOfWork;
+
+public PatientsController(IUnitOfWork unitOfWork)
+{
+    _unitOfWork = unitOfWork;
+}
+```
